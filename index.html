@@ -15,87 +15,118 @@
 </head>
 <body>
   <div class="card">
+        <!-- HEADER -->
         <div class="header">
             <div class="logo">
-                <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1785636855/logo_nv7kbl.png" alt="Logo Mi Galería">
+                <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1786903544/foto_1_lqdnco.png" alt="Logo Mi Galería">
             </div>
-            <div class="subtitle">TARJETA DIGITAL</div>
-            <div class="subtitle">Mi Galería</div>
+            <div class="subtitle">CONTACTOS</div>
+            <div class="subtitle">2026</div>
         </div>
 
+        <!-- CARRUSEL 3D (12 IMÁGENES) -->
+        <div class="carousel-container" id="carousel">
+            <div class="box" id="box">
+                <span style="--i:0;">
+                    <div class="card-3d active">
+                        <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1792200084/gato1_wuzk8m.jpg" alt="Obra 1">
+                    </div>
+                </span>
+                <span style="--i:1;">
+                    <div class="card-3d">
+                        <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1785636853/foto_2_b8tdqz.jpg" alt="Obra 2">
+                    </div>
+                </span>
+                <span style="--i:2;">
+                    <div class="card-3d">
+                        <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1785636857/foto_3_b6i1f0.jpg" alt="Obra 3">
+                    </div>
+                </span>
+                <span style="--i:3;">
+                    <div class="card-3d">
+                        <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1785636855/foto_4_wcx6eu.jpg" alt="Obra 4">
+                    </div>
+                </span>
+                <span style="--i:4;">
+                    <div class="card-3d">
+                        <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1785636856/foto_5_rfmkiy.jpg" alt="Obra 5">
+                    </div>
+                </span>
+                <span style="--i:5;">
+                    <div class="card-3d">
+                        <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1786903544/foto_1_lqdnco.png" alt="Obra 6">
+                    </div>
+                </span>
+                <span style="--i:6;">
+                    <div class="card-3d">
+                        <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1792200083/chiguagua_vewxqr.jpg" alt="Obra 7">
+                    </div>
+                </span>
+                <span style="--i:7;">
+                    <div class="card-3d">
+                        <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1792543525/gato2_eewqxb.png" alt="Obra 8">
+                    </div>
+                </span>
+                <span style="--i:8;">
+                    <div class="card-3d">
+                        <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1792543692/caballo1_nxvrkm.png" alt="Obra 9">
+                    </div>
+                </span>
+                <span style="--i:9;">
+                    <div class="card-3d">
+                        <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1792200085/rita_hao49t.jpg" alt="Obra 10">
+                    </div>
+                </span>
+                <span style="--i:10;">
+                    <div class="card-3d">
+                        <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1792543963/treile_skokbt.png" alt="Obra 11">
+                    </div>
+                </span>
+                <span style="--i:11;">
+                    <div class="card-3d">
+                        <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1792543963/piden_pujqjr.png" alt="Obra 12">
+                    </div>
+                </span>
+            </div>
+        </div>
+
+       <!-- CONTACTOS MINIMALISTAS (ICONOS SUELTOS + WEB CENTRADA) -->
         <div class="content"> 
-            <!-- Instagram -->
-            <div class="info-item">
-                <div class="icon"><i class="fab fa-instagram"></i></div>
-                <div class="info-text">
-                    <a href="https://www.instagram.com/mi_galeria2026" target="_blank">@mi_galeria2026</a>
-                </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/mi_galeria2026" target="_blank" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://t.me/Mi_Galeria2026" target="_blank" class="social-link" aria-label="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="mailto:MiGaleria2026@outlook.es" class="social-link" aria-label="Correo">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
 
-            <!-- Telegram -->
-            <div class="info-item">
-                <div class="icon"><i class="fab fa-telegram"></i></div>
-                <div class="info-text">
-                    <a href="https://t.me/Mi_Galeria2026" target="_blank">t.me/Mi_Galeria2026</a>
-                </div>
-            </div>
-
-            <!-- Sitio Web Vercel -->
-            <div class="info-item">
-                <div class="icon"><i class="fas fa-globe"></i></div>
-                <div class="info-text">
-                    <a href="https://mi-galeria2026.vercel.app/" target="_blank">www.MiGaleria2026.cl</a>
-                </div>
-            </div>
-
-            <!-- Correo Outlook -->
-            <div class="info-item">
-                <div class="icon"><i class="fas fa-envelope"></i></div>
-                <div class="info-text">
-                    <a href="mailto:MiGaleria2026@outlook.es">MiGaleria2026@outlook.es</a>
-                </div>
-            </div>
+           <div class="web-item-centered">
+             <a href="https://mi-galeria2026.vercel.app/" target="_blank">www.mi_galeria2026.cl</a>
+           </div>
 
             <div class="divider"></div>
         </div>
 
+        <!-- SECCIÓN QR -->
         <div class="qr-section">
             <div class="qr-code">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31" shape-rendering="crispEdges" style="width: 100%; height: 100%; display: block; background-color: #ffffff;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31" shape-rendering="crispEdges" style="width: 100%; height: 100%; display: block;">
+                    <path fill="#ffffff" d="M0 0h31v31H0z"/>
                     <path fill="#000000" d="M1 1h1v1H1zm1 0h1v1H2zm1 0h1v1H3zm1 0h1v1H4zm1 0h1v1H5zm1 0h1v1H6zm1 0h1v1H7zm2 0h1v1H9zm3 0h1v1h-1zm3 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm4 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zM1 2h1v1H1zm6 0h1v1H7zm3 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm4 0h1v1h-1zm3 0h1v1h-1zm2 0h1v1h-1zm6 0h1v1h-1zM1 3h1v1H1zm2 0h1v1H3zm1 0h1v1H4zm1 0h1v1H5zm2 0h1v1H7zm2 0h1v1H9zm4 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm3 0h1v1h-1zm3 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zM1 4h1v1H1zm2 0h1v1H3zm1 0h1v1H4zm1 0h1v1H5zm2 0h1v1H7zm2 0h1v1H9zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm3 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zM1 5h1v1H1zm2 0h1v1H3zm1 0h1v1H4zm1 0h1v1H5zm2 0h1v1H7zm3 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm4 0h1v1h-1zm1 0h1v1h-1zm4 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zM1 6h1v1H1zm6 0h1v1H7zm2 0h1v1H9zm4 0h1v1h-1zm4 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm6 0h1v1h-1zM1 7h1v1H1zm1 0h1v1H2zm1 0h1v1H3zm1 0h1v1H4zm1 0h1v1H5zm1 0h1v1H6zm1 0h1v1H7zm2 0h1v1H9zm2 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zM9 8h1v1H9zm4 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm3 0h1v1h-1zM1 9h1v1H1zm1 0h1v1H2zm2 0h1v1H4zm3 0h1v1H7zm1 0h1v1H8zm2 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm3 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm3 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zM1 10h1v1H1zm1 0h1v1H2zm1 0h1v1H3zm1 0h1v1H4zm1 0h1v1H5zm6 0h1v1h-1zm3 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm3 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zM1 11h1v1H1zm6 0h1v1H7zm3 0h1v1h-1zm3 0h1v1h-1zm4 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm3 0h1v1h-1zm4 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zM1 12h1v1H1zm4 0h1v1H5zm1 0h1v1H6zm2 0h1v1H8zm3 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm3 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm5 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zM1 13h1v1H1zm1 0h1v1H2zm1 0h1v1H3zm2 0h1v1H5zm1 0h1v1H6zm1 0h1v1H7zm6 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm3 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zM1 14h1v1H1zm1 0h1v1H2zm4 0h1v1H6zm3 0h1v1H9zm1 0h1v1h-1zm1 0h1v1h-1zm4 0h1v1h-1zm4 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm3 0h1v1h-1zm3 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zM1 15h1v1H1zm3 0h1v1H4zm1 0h1v1H5zm2 0h1v1H7zm3 0h1v1h-1zm3 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm4 0h1v1h-1zM1 16h1v1H1zm3 0h1v1H4zm2 0h1v1H6zm2 0h1v1H8zm1 0h1v1H9zm1 0h1v1h-1zm3 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm3 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm5 0h1v1h-1zM2 17h1v1H2zm1 0h1v1H3zm2 0h1v1H5zm1 0h1v1H6zm1 0h1v1H7zm1 0h1v1H8zm3 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm6 0h1v1h-1zM4 18h1v1H4zm1 0h1v1H5zm3 0h1v1H8zm1 0h1v1H9zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm5 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zM1 19h1v1H1zm2 0h1v1H3zm3 0h1v1H6zm1 0h1v1H7zm1 0h1v1H8zm1 0h1v1H9zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm5 0h1v1h-1zm2 0h1v1h-1zM1 20h1v1H1zm4 0h1v1H5zm1 0h1v1H6zm3 0h1v1H9zm1 0h1v1h-1zm4 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm4 0h1v1h-1zm2 0h1v1h-1zm5 0h1v1h-1zm1 0h1v1h-1zM1 21h1v1H1zm1 0h1v1H2zm2 0h1v1H4zm2 0h1v1H6zm1 0h1v1H7zm3 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm3 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm-19 1h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm4 0h1v1h-1zm1 0h1v1h-1zm3 0h1v1h-1zM1 23h1v1H1zm1 0h1v1H2zm1 0h1v1H3zm1 0h1v1H4zm1 0h1v1H5zm1 0h1v1H6zm1 0h1v1H7zm2 0h1v1H9zm1 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm3 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zM1 24h1v1H1zm6 0h1v1H7zm3 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm4 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zM1 25h1v1H1zm2 0h1v1H3zm1 0h1v1H4zm1 0h1v1H5zm2 0h1v1H7zm3 0h1v1h-1zm7 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zM1 26h1v1H1zm2 0h1v1H3zm1 0h1v1H4zm1 0h1v1H5zm2 0h1v1H7zm2 0h1v1H9zm4 0h1v1h-1zm4 0h1v1h-1zm1 0h1v1h-1zm3 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zM1 27h1v1H1zm2 0h1v1H3zm1 0h1v1H4zm1 0h1v1H5zm2 0h1v1H7zm4 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm3 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm3 0h1v1h-1zm2 0h1v1h-1zM1 28h1v1H1zm6 0h1v1H7zm2 0h1v1H9zm2 0h1v1h-1zm3 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm1 0h1v1h-1zm4 0h1v1h-1zm1 0h1v1h-1zm3 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zM1 29h1v1H1zm1 0h1v1H2zm1 0h1v1H3zm1 0h1v1H4zm1 0h1v1H5zm1 0h1v1H6zm1 0h1v1H7zm2 0h1v1H9zm1 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm1 0h1v1h-1zm7 0h1v1h-1zm3 0h1v1h-1zm2 0h1v1h-1z"/>
                 </svg>
-           </div>
-        </div>
-
-        <div class="footer">
-            <p class="tagline">"El arte no reproduce lo visible; hace visible lo invisible."</p>
-        </div>
-
-        <div class="gallery-container">
-            <div class="gallery-grid">
-                <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1785636856/foto_1_lqdnco.jpg" alt="Obra 1" 
-                loading="lazy">
-                <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1785636853/foto_2_b8tdqz.jpg" alt="Obra 2" 
-                loading="lazy">
-                <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1785636857/foto_3_b6i1f0.jpg" alt="Obra 3" 
-                loading="lazy">
-                <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1785636855/foto_4_wcx6eu.jpg" alt="Obra 4" 
-                loading="lazy">
-                <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1785636856/foto_5_rfmkiy.jpg" alt="Obra 5" 
-                loading="lazy">
             </div>
         </div>
+
+        <!-- TAGLINE Y FOOTER CRÉDITOS -->
+        <div class="footer">
+            <p class="tagline">"El arte no reproduce lo visible; hace visible lo invisible."</p>
+            <p class="credits">© 2026 TheAprendizIA2026-256. Todos los derechos reservados.<br>Código fuente en GitHub</p>
+        </div>
   </div>
-
-  <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./ServiceWorker.js')
-                    .then(reg => console.log('Service Worker registrado con éxito'))
-                    .catch(err => console.error('Error al registrar Service Worker', err));
-            });
-        }
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
