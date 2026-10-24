@@ -139,7 +139,7 @@ body {
 /* TARJETA ACTIVA AL FRENTE (MÁS GRANDE Y 100% OPACA) */
 .card-3d.active {
     opacity: 1;
-    transform: scale(1.4);
+    transform: scale(1.5);
     border: 1px solid rgba(245, 222, 179, 0.6);
     box-shadow: 0 0 12px rgba(245, 222, 179, 0.25);
 }
