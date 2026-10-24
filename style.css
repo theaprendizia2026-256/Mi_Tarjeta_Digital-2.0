@@ -37,14 +37,14 @@ body {
     position: relative;
     overflow: hidden;
     flex-shrink: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .logo {
-    width: 25vh;
-    height: 25vh;
-    max-width: 180px;
-    max-height: 180px;
+    width: 12vh;
+    height: 12vh;
+    max-width: 120px;
+    max-height: 120px;
     margin: 0 auto 1vh;
     border-radius: 50%;
     overflow: hidden;
@@ -139,7 +139,7 @@ body {
 /* TARJETA ACTIVA AL FRENTE (MÁS GRANDE Y 100% OPACA) */
 .card-3d.active {
     opacity: 1;
-    transform: scale(1.5);
+    transform: scale(1.15);
     border: 1px solid rgba(245, 222, 179, 0.6);
     box-shadow: 0 0 12px rgba(245, 222, 179, 0.25);
 }
