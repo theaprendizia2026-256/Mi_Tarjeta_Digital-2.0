@@ -1,7 +1,7 @@
 # PROYECTO: Tarjeta Digital v2.0 (PWA & Carrusel 3D) · Mi Tarjeta
 
 **Technical Stack:** Vanilla HTML5 / CSS3 / JavaScript (Vector SVG + CDN Cloudinary)  
-**Deployment:** [https://mi-tarjeta.vercel.app/]  
+**Deployment:** https://mi-tarjeta.vercel.app/
 **Autoría / Repositorio:** `theaprendizia2026-256` (GitHub)  
 
 ---
