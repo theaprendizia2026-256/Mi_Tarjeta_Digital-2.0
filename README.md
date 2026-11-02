@@ -1,49 +1,53 @@
-# PROYECTO: Tarjeta Digital (PWA – Progressive Web App) · Mi Tarjeta
-**Technical Stack:** Vanilla HTML5 / CSS3 / JavaScript (Vector SVG + CDN FontAwesome)  
+# PROYECTO: Tarjeta Digital v2.0 (PWA & Carrusel 3D) · Mi Tarjeta
+**Technical Stack:** Vanilla HTML5 / CSS3 / JavaScript (Vector SVG + CDN Cloudinary)  
 **Deployment:** [https://mi-tarjeta.vercel.app/]
-
-## 1. Introducción
-Este sistema representa la solución de software de presencia centralizada y networking digital para **Mi Tarjeta**. Se trata de una **Progressive Web App (PWA)** desarrollada bajo una filosofía de ingeniería de interfaz minimalista, optimizada para consolidar canales de contacto, redes profesionales y un portafolio de acceso rápido en dispositivos móviles.
-
-## 2. Previsualización del Sistema
-<div align="center">
-  <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1786105933/Screenshot_20260807_083303_com.brave.browser_mfiakx.jpg" width="250" alt="Captura de Pantalla Mi Tarjeta Digital">
-  <p><i>Interfaz ergonómica adaptativa con hub de redes, código QR vectorial e instalación PWA nativa.</i></p>
-</div>
-
-## 3. Problemática
-El intercambio de información de contacto profesional en entornos físicos y digitales suele sufrir de fricción y dispersión. Este proyecto resuelve la necesidad de una plataforma centralizada que sea:
-* **Accesible:** Sin intermediación de tiendas de aplicaciones (App Store / Play Store).
-* **Persistente:** Consultable con o sin conexión a internet mediante almacenamiento en caché de App Shell.
-* **Interactiva:** Integración directa a canales oficiales (Instagram, Telegram, Correo Outlook, Sitio Web Vercel) en un solo toque.
-
-## 4. Requerimientos del Sistema
-
-### 4.1 Requerimientos Funcionales (RF)
-* **RF-1:** Enlaces directos a canales oficiales (Instagram, Telegram, Correo Outlook y Web Vercel).
-* **RF-2:** Generación e integración de código QR nativo en formato **SVG vectorial puro** (`viewBox 0 0 31 31`), eliminando peticiones HTTP externas para el renderizado del QR.
-* **RF-3:** Módulo de galería responsiva con grilla de 2 columnas y carga diferida (`loading="lazy"`).
-* **RF-4:** Implementación de Service Worker (`ServiceWorker.js`) para caché de App Shell y disponibilidad offline.
-* **RF-5:** Adaptabilidad ergonómica para visualización en modo horizontal/landscape (`@media (orientation: landscape)`).
-
-### 4.2 Requerimientos No Funcionales (RNF)
-* **RNF-1 (Rendimiento):** Tiempo de carga crítico ultrarrápido mediante código Vanilla puro (cero frameworks) y assets en CDN Cloudinary.
-* **RNF-2 (Ergonomía Adaptativa):** Layout híbrido usando unidades dinámicas del Viewport (`100dvh`) con *scroll* vertical fluido.
-* **RNF-3 (Instalabilidad PWA):** Cumplimiento total del estándar W3C PWA (`manifest.json`) para instalación nativa en pantalla de inicio bajo la marca *"Mi_Tarjeta"*.
-
-## 5. Casos de Uso
-* **Escenario A (Networking Presencial):** El contacto escanea el QR en un encuentro presencial y guarda la tarjeta en su teléfono como app nativa.
-* **Escenario B (Consulta Sin Red):** El usuario accede a los datos de contacto o enlaces directos en zonas con baja cobertura mediante la caché guardada.
-* **Escenario C (Redirección Directa):** Un usuario abre la PWA e inicia un chat directo en Telegram o lanza un correo a Outlook con un solo toque.
-
-## 6. Estructura de Ingeniería
-* **`index.html`**: Estructura semántica, inyección de QR vectorial SVG y registro del Service Worker.
-* **`style.css`**: Motor gráfico responsivo en CSS3 puro con soporte `100dvh` y reglas para modo landscape.
-* **`ServiceWorker.js`**: Gestor de caché App Shell con estrategia *Cache First* para recursos locales.
-* **`manifest.json`**: Metadatos PWA y configuración de iconos adaptativos (`192x192` y `512x512 maskable`).
-* **`CHANGELOG.md`**: Historial de versiones y control de cambios del software.
-* **`CONTRIBUTING.md`**: Reglas de desarrollo e ingeniería del proyecto.
-* **`LICENSE`**: Licencia de código abierto MIT.
+**Autoría / Repositorio:** `theaprendizia2026-256` (GitHub)  
+**Periodo de Consolidación:** Octubre 2026  
 
 ---
-*Documentación técnica de cierre para la versión estable 1.0.0.*
+
+## 1. Introducción e Ingeniería de Software
+Este documento formaliza la especificación y el informe de ingeniería de software para **Mi Tarjeta Digital v2.0**. Concebido bajo la filosofía de **mínimos recursos y máxima eficiencia**, el sistema prescinde de dependencias innecesarias y frameworks pesados, implementando un núcleo robusto con simplicidad externa y alta complejidad interna. Su propósito es consolidar la presencia artística y el networking digital mediante una interfaz minimalista de rendimiento extremo, integrable como Progressive Web App (PWA) y optimizada para dispositivos móviles de cualquier gama.
+
+## 2. Previsualización y Arquitectura Visual
+<div align="center">
+  <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1786105933/Screenshot_20260807_083303_com.brave.browser_mfiakx.jpg" width="250" alt="Captura de Pantalla Mi Tarjeta Digital v2.0">
+  <p><i>Layout superior (Above the fold): Carrusel tridimensional dinámico, hub de contactos institucionales y código QR vectorial nativo.</i></p>
+</div>
+
+## 3. Problemática y Objetivos de Diseño
+Las soluciones de presentación digital tradicionales adolecen de sobrecarga de librerías, tiempos de latencia elevados y dependencias de terceros. Esta arquitectura resuelve la difusión de autor y el acceso a catálogos bajo tres pilares inquebrantables:
+- **Autonomía y Despliegue Directo:** Ejecución nativa en el navegador sin fricción de tiendas de aplicaciones corporativas (App Store / Play Store).
+- **Resiliencia Operativa Offline:** Persistencia garantizada del *App Shell* mediante estrategias de caché gestionadas por un Service Worker dedicado.
+- **Impacto Visual Inmediato (*Above the Fold*):** Exposición simultánea y controlada de 12 obras pictóricas primarias mediante un motor gráfico tridimensional nativo en CSS puro, minimizando la ejecución de scripts.
+
+## 4. Requerimientos del Sistema (Versión 2.0)
+
+### 4.1 Requerimientos Funcionales (RF)
+- **RF-1 (Carrusel 3D Dinámico):** Motor tridimensional en CSS3 puro con lógica JavaScript mínima para la rotación fluida, secuencial e indexada de 12 pinturas (`--i:0` a `--i:11`), con soporte nativo para gestos táctiles (touch) y eventos de cursor en escritorio.
+- **RF-2 (Hub de Contactos Institucionales):** Enlaces directos estructurados con iconografía vectorial para Instagram, Telegram, correo electrónico oficial (`oulax@oulax.com`) y redirección al dossier web secundario en Vercel (`mi-galeria2026.vercel.app`).
+- **RF-3 (QR Vectorial Nativo):** Inyección directa de código QR en formato SVG puro mediante coordenadas vectoriales (`viewBox 0 0 31 31`), eliminando solicitudes HTTP externas y asegurando el escaneo instantáneo en cualquier condición de pantalla.
+- **RF-4 (Motor PWA & Caché):** Implementación de `manifest.json` con soporte *standalone* e integración de `ServiceWorker.js` bajo estrategia de caché *Cache-First*.
+- **RF-5 (Ergonomía Adaptativa y Landscape):** Reglas de diseño responsivo basadas en unidades dinámicas del Viewport (`100dvh`) y media queries dedicadas para reajuste en orientación horizontal (`<= 550px`).
+
+### 4.2 Requerimientos No Funcionales (RNF)
+- **RNF-1 (Rendimiento Crítico):** Cero utilización de frameworks (React, Vue, Tailwind). Arquitectura puramente basada en Vanilla HTML5/CSS3/JS para garantizar renderizado instantáneo en hardware de bajo rendimiento.
+- **RNF-2 (Optimización de Assets en CDN):** Externalización y entrega de la capa gráfica artística (12 obras pictóricas) a través de infraestructura Cloudinary, evitando sobrecarga en el almacenamiento local del repositorio.
+- **RNF-3 (Mantenibilidad y Cero Deuda Técnica):** Estricta adherencia al principio de que todo bloque de código o elemento de UI debe poseer una función crítica demostrable; lo redundante es eliminado.
+
+## 5. Casos de Uso del Sistema
+- **Escenario A (Networking y Muestra en Terreno):** El espectador interactúa de forma táctil con el carrusel 3D de obras y escanea el código QR vectorial directamente desde la pantalla para guardar el acceso.
+- **Escenario B (Conectividad Intermitente o Nula):** El usuario accede al sistema y consulta la información de contacto y enlaces críticos gracias al almacenamiento persistente del App Shell en el Service Worker.
+- **Escenario C (Derivación a Dossier Artístico):** Acceso secundario al catálogo web minimalista alojado en Vercel, permitiendo la exploración profunda por categorías (acuarela, óleo, dibujo) y grillas con carruseles de detalle.
+
+## 6. Diagrama de Arquitectura y Estructura de Archivos
+El proyecto se organiza bajo una estructura plana y altamente eficiente:
+
+```text
+├── index.html           # Punto de entrada semántico, inyección de carrusel 3D, SVG y registro de PWA.
+├── style.css            # Motor gráfico CSS3 puro, variables de posición (--i), 100dvh y media queries.
+├── ServiceWorker.js     # Controlador de caché offline para el App Shell (Estrategia Cache-First).
+├── manifest.json        # Metadatos PWA, configuración standalone e iconos adaptativos.
+├── CHANGELOG.md         # Bitácora histórica de evolución técnica (v1.0.0 a v2.0.0).
+├── CONTRIBUTING.md      # Guía estricta de desarrollo y normas de cero deuda técnica.
+└── LICENSE              # Licencia de código abierto MIT (theaprendizia2026-256).
