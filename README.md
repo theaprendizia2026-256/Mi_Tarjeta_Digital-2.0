@@ -12,7 +12,7 @@ Este documento formaliza la especificación técnica de la versión 2.0 de **Mi 
 
 ## 2. Previsualización y Arquitectura Visual
 <div align="center">
-  <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1786105933/Screenshot_20260807_083303_com.brave.browser_mfiakx.jpg" width="250" alt="Captura de Pantalla Mi Tarjeta Digital v2.0">
+  <img src="https://res.cloudinary.com/deqk2tmer/image/upload/v1793626664/Screenshot_20261102_102936_gqyu2r.jpg" width="250" alt="Captura de Pantalla Mi Tarjeta Digital v2.0">
   <p><i>Layout superior (Above the fold): Carrusel tridimensional dinámico, hub de contactos institucionales y código QR vectorial nativo.</i></p>
 </div>
 
